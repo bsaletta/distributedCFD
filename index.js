@@ -29,7 +29,13 @@ const server = http.createServer((req,res)=>{
         res.setHeader('Content-Type','text/javascript');
         break;
       case '.css':
-        res.setHeader('Content-Type','text/stylesheet');
+        res.setHeader('Content-Type','text/css');
+        break;
+      case '.ico':
+        res.setHeader('Content-Type','image/png');
+        break;
+      case '.png':
+        res.setHeader('Content-Type','image/png');
         break;
       default:
         res.setHeader('Content-Type','application/octet-stream');
